@@ -6,4 +6,5 @@ server = socket.socket()
 server.bind ((host, int(port))) 
 server.listen(5)
 conn, addr = server.accept() 
+print ('connection from' + str(addr)) 
 conn.close
